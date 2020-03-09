@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.freedom.mybatisplus.mapper.PersonMapper">
+
+
+    <insert id="insertPerson" parameterType="com.freedom.mybatisplus.domain.Person">
+        insert into person values (null ,#{name},#{age})
+    </insert>
+
+    <insert id="insertList" parameterType="com.freedom.mybatisplus.domain.Person">
+        insert into person values
+        <foreach collection="list" item="p"  separator=",">
+            (#{p.id},#{p.name},#{p.age})
+        </foreach>
+    </insert>
+
+    <select id="selectByName" parameterType="java.lang.String" resultType="com.freedom.mybatisplus.domain.Person">
+        select * from person where na_me=#{name}
+    </select>
+</mapper>
