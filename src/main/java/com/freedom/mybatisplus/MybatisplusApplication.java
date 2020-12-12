@@ -1,6 +1,6 @@
 package com.freedom.mybatisplus;
 
-import com.free.testone.domain.Persons;
+//import com.free.testone.domain.Persons;
 import com.freedom.mybatisplus.controller.TestTransactionalController;
 import com.freedom.mybatisplus.domain.Person;
 import com.freedom.mybatisplus.service.TestAsynService;
@@ -23,10 +23,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.annotation.Resource;
 import javax.sql.DataSource;
 
-@MapperScan("com.freedom.mybatisplus.mapper")
 @SpringBootApplication(scanBasePackages = {"com.*"})
 @EnableAsync(proxyTargetClass = true)
-
+@MapperScan(value = "com.freedom.mybatisplus.mapper")
 //@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class MybatisplusApplication {
 
@@ -36,8 +35,18 @@ public class MybatisplusApplication {
     @Resource
     private TestTransactionalService testTransactionalServiceImpl;
 
-    @Resource
-    private Persons person;
+    /*@Resource
+    private Persons person;*/
+
+
+
+
+    @Bean
+    public Object obj(DataSource dataSource){
+        System.out.println("23333"+dataSource.getClass().getName());
+
+        return new Object();
+    }
 
 
 

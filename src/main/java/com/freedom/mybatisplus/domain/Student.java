@@ -1,5 +1,8 @@
 package com.freedom.mybatisplus.domain;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 /**
@@ -10,8 +13,10 @@ import java.io.Serializable;
  */
 public class Student implements Serializable {
 
+    @Size(min=2,max=10,message = "长度错误")
     private String name;
-
+    @Max(value = 200,message = "大小错误")
+    @Min(value = 10,message = "大小错误")
     private Integer age;
 
 

@@ -1,0 +1,49 @@
+2020-12-06 16:37:32.857  INFO 8036 --- [main] c.f.mybatisplus.MybatisplusApplication   : Starting MybatisplusApplication on USER-20160710BY with PID 8036 (E:\mybatisplus\target\classes started by Administrator in E:\mybatisplus)
+2020-12-06 16:37:32.887  INFO 8036 --- [main] c.f.mybatisplus.MybatisplusApplication   : No active profile set, falling back to default profiles: default
+2020-12-06 16:37:38.487  INFO 8036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-06 16:37:38.487  INFO 8036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-06 16:37:38.527  INFO 8036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2020-12-06 16:37:39.207  INFO 8036 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a44e0603] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-06 16:37:40.257  INFO 8036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-12-06 16:37:40.297  INFO 8036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-06 16:37:40.297  INFO 8036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-12-06 16:37:40.657  INFO 8036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-06 16:37:40.657  INFO 8036 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7640 ms
+2020-12-06 16:37:41.737  WARN 8036 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatisplusApplication': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testTransactionalServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.freedom.mybatisplus.mapper.SonMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2020-12-06 16:37:41.777  INFO 8036 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-12-06 16:37:41.817  INFO 8036 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-06 16:37:41.947 ERROR 8036 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.freedom.mybatisplus.mapper.SonMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.freedom.mybatisplus.mapper.SonMapper' in your configuration.
+
+2020-12-06 16:38:49.203  INFO 3784 --- [main] c.f.mybatisplus.MybatisplusApplication   : Starting MybatisplusApplication on USER-20160710BY with PID 3784 (E:\mybatisplus\target\classes started by Administrator in E:\mybatisplus)
+2020-12-06 16:38:49.213  INFO 3784 --- [main] c.f.mybatisplus.MybatisplusApplication   : No active profile set, falling back to default profiles: default
+2020-12-06 16:38:55.073  INFO 3784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-06 16:38:55.073  INFO 3784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-06 16:38:55.113  INFO 3784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
+2020-12-06 16:38:55.663  INFO 3784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8f9792a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-06 16:38:56.763  INFO 3784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-12-06 16:38:56.793  INFO 3784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-06 16:38:56.793  INFO 3784 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-12-06 16:38:57.113  INFO 3784 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-06 16:38:57.113  INFO 3784 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7800 ms
+2020-12-06 16:38:59.063  INFO 3784 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-06 16:38:59.563  INFO 3784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-06 16:38:59.563  INFO 3784 --- [main] c.f.mybatisplus.MybatisplusApplication   : Started MybatisplusApplication in 10.97 seconds (JVM running for 11.833)
+2020-12-06 16:39:51.953  INFO 3784 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-06 16:39:51.953  INFO 3784 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-06 16:39:51.974  INFO 3784 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-12-06 16:39:52.113  INFO 3784 --- [http-nio-8090-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited

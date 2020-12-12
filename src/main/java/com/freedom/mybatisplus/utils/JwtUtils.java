@@ -1,5 +1,6 @@
 package com.freedom.mybatisplus.utils;
 
+import com.freedom.mybatisplus.domain.Son;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.slf4j.Logger;
@@ -9,8 +10,10 @@ import org.springframework.stereotype.Component;
 import javax.crypto.spec.SecretKeySpec;
 import javax.xml.bind.DatatypeConverter;
 import java.security.Key;
+import java.security.MessageDigest;
 import java.util.Date;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -22,7 +25,7 @@ import java.util.Map;
 @Component
 public class JwtUtils {
     /**
-     * 过期时间 30分钟
+     * 过期时间 30分钟 毫秒
      */
     private static Long EXPIRE_TIME=(long)(30*60*1000);
 
@@ -33,8 +36,11 @@ public class JwtUtils {
 
     private static Logger log = LoggerFactory.getLogger(JwtUtils.class);
 
+
     //该方法使用HS256算法和Secret:bankgl生成signKey
     private static Key getKeyInstance() {
+
+
         //We will sign our JavaWebToken with our ApiKey secret
         SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
         byte[] apiKeySecretBytes = DatatypeConverter.parseBase64Binary(SECRET);
@@ -58,5 +64,10 @@ public class JwtUtils {
         } catch (Exception e) {
             throw new RuntimeException("json web token verify failed");
         }
+    }
+
+    public static Son createSon(){
+
+        return new Son();
     }
 }

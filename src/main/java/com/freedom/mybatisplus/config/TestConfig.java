@@ -1,7 +1,6 @@
 package com.freedom.mybatisplus.config;
 
 
-import com.free.testone.domain.Persons;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,8 +14,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class TestConfig {
 
-    @Bean
-    public Persons person(){
+/*    @Bean
+    public Persons person2(){
 
         System.out.println("加载：2");
            return new Persons();
@@ -29,6 +28,6 @@ public class TestConfig {
         System.out.println("加载：3");
         return new Persons();
 
-    }
+    }*/
 
 }

@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-@Mapper
+/*@Mapper
 public interface PersonMapper extends BaseMapper<Person> {
 
     int insertPerson(Person person);
@@ -14,4 +14,4 @@ public interface PersonMapper extends BaseMapper<Person> {
     int insertList(List<Person> list);
 
     List<Person> selectByName(String name);
-}
+}*/
