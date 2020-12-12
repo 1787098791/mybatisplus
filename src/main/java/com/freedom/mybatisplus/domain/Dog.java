@@ -12,6 +12,8 @@ import org.springframework.stereotype.Service;
 public class Dog extends Animal {
     @Override
     public void test() {
+
+
         System.out.println("狗狗狗狗");
     }
 }
